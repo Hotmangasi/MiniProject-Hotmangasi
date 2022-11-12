@@ -47,7 +47,7 @@ export default function Homepage() {
       });
   };
 
-  // add
+  // add todo
   const writeToDatabase = () => {
     const uidd = uid();
     set(ref(db, `/${auth.currentUser.uid}/${uidd}`), {
